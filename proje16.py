@@ -4,7 +4,7 @@ from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters , ConversationHandler, CallbackContext
 
 # Scopus API key (replace with your API key)
-SCOPUS_API_KEY = "922723b3f2153e53c8932c72347ce48a"
+SCOPUS_API_KEY = "your scopus api key"
 
 # Define states for conversation handling
 SEARCH_BY_NAME, SEARCH_BY_ID, SEARCH_BY_NAME_ID, SEARCH_BY_DOCUMENT = range(4)  # Define SEARCH_BY_DOCUMENT here
@@ -270,7 +270,7 @@ def search_by_document(update: Update, context: CallbackContext):
 # Main function to start the bot
 def main():
     # Initialize the Telegram bot
-    updater = Updater(token="6374304134:AAHXE--FYY3NrdBGvu7G8F9kSlNpUqAb9tE", use_context=True)  # Replace with your bot token
+    updater = Updater(token="your telegram bot token", use_context=True)  # Replace with your bot token
     dispatcher = updater.dispatcher
 
     # Define conversation handler
